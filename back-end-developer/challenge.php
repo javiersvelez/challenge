@@ -1,42 +1,46 @@
 <?php
-    //Challenge Back-end Developer
-    for ($i = 1; $i < 101; $i++){
-        //One if requirement
-        if (true){
-        echo_special($i);
-        }
-    }
-    
-    function echo_special($n){
-        $rem3 = $n % 3;
-        $rem5 = $n % 5;
-        $remainders = $rem3 . $rem5;
-        
-        switch($remainders){
+namespace Linio;
+
+class Challenge
+{
+	public function procesar($numeros){
+		$resultado = array();
+		foreach ($numeros as $n) {
+			$salida = '';
+
+			$rem3 = $n % 3;
+			$rem5 = $n % 5;
+			$remainders = $rem3 . $rem5;
+
+			switch($remainders){
 				case "00":
-				echo "\nLinianos";
+				$salida = "\nLinianos";
 				break;
 				case "01":
-				echo "\nLinio";
+				$salida = "\nLinio";
 				break;
 				case "02":
-				echo "\nLinio";
+				$salida = "\nLinio";
 				break;
 				case "03":
-				echo "\nLinio";
+				$salida = "\nLinio";
 				break;
 				case "04":
-				echo "\nLinio";
+				$salida = "\nLinio";
 				break;
 				case "10":
-				echo "\nIT";
+				$salida = "\nIT";
 				break;
 				case "20":
-				echo "\nIT";
+				$salida = "\nIT";
 				break;
 				default:
-				echo "\n$n";
+				$salida = "\n$n";
 				break;
 			}
-    }
+			$resultado[] = $salida;
+		}
+		return $resultado;
+	}
+}
 ?>
