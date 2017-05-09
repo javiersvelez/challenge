@@ -14,28 +14,28 @@ class Challenge
 
 			switch($remainders){
 				case "00":
-				$salida = "\nLinianos";
+				$salida = "Linianos";
 				break;
 				case "01":
-				$salida = "\nLinio";
+				$salida = "Linio";
 				break;
 				case "02":
-				$salida = "\nLinio";
+				$salida = "Linio";
 				break;
 				case "03":
-				$salida = "\nLinio";
+				$salida = "Linio";
 				break;
 				case "04":
-				$salida = "\nLinio";
+				$salida = "Linio";
 				break;
 				case "10":
-				$salida = "\nIT";
+				$salida = "IT";
 				break;
 				case "20":
-				$salida = "\nIT";
+				$salida = "IT";
 				break;
 				default:
-				$salida = "\n$n";
+				$salida = "$n";
 				break;
 			}
 			$resultado[] = $salida;
